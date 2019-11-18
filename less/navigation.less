@@ -1,27 +1,47 @@
 // Navigation code here
 nav{
-    .section-theme(row nowrap, 100%, flex-start, baseline, 1%);
-    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    // margin: 0 auto;
     background-color:@nav-bg;
+    justify-content: space-between;
+    align-items: center;
     
 	.logo{
-	width: 20%;
-    // text-align:left;
-	padding:1% 0%;
+        width:40%;
+        padding:2%;
+
+        @media @phone{
+            width:100%;
+            padding:2%;
+            flex-wrap:wrap;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
 	}
 
 	.links{
-	// width:40%;
-	justify-content:space-around;
-    text-align:right;
-    // padding:1%;
-
+        // padding:1%;
+        width:60%;
+        text-align:right;
+        
 		a{
 			text-decoration:none;
 			color:white;
 			font-size: 1rem;
-            padding: 2%;
-            font-size:1.8rem;
-		}
+            padding: 6%;
+            font-size:1.9rem;
+        }
+        a:hover{
+            background-color:@violet;
+        }
+        
+        @media @phone{
+            width:100%;
+            justify-content:space-around;
+            text-align:center;
+            padding:1%;
+        }
 	}
 }

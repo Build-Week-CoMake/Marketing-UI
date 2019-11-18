@@ -3,11 +3,55 @@
 
 
 // .home {
-
-.main-header{
+.header{
     width:100%;
-    opacity:90%;
+
+    .main-header{
+        width:100%;
+        opacity:60%;
+        background-attachment:fixed;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center center;
+
+        @media @phone{
+            .display();
+        }
+    }
+
+    .over-img{
+    position:absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+
+        .header-text{
+            font-family: 'Alata', sans-serif;
+            font-size: 7rem;
+
+        @media @phone{
+            font-size:4rem;
+        }
+        }
+
+        .make-text{
+            font-size:10rem;
+
+        @media @phone{
+            font-size:6rem;
+        }
+        }
+
+        input[type=text]{
+            padding:4%;
+            margin:5% 0%;
+            border:none;
+            font-size:2rem;
+        }
+    }
+
 }
+
 
 
 // .intro {

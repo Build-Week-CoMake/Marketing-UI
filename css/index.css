@@ -136,7 +136,12 @@ body {
 h1 {
   font-family: 'Yellowtail', cursive;
   color: white;
-  font-size: 4.5rem;
+  font-size: 6rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 5rem;
+  }
 }
 h2,
 h3,
@@ -161,28 +166,47 @@ p {
   margin: 0 auto;
 }
 nav {
-  flex-flow: row nowrap;
-  width: 100%;
-  justify-content: flex-start;
-  align-items: baseline;
-  padding: 1%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f04c25;
+  justify-content: space-between;
+  align-items: center;
 }
 nav .logo {
-  width: 20%;
-  padding: 1% 0%;
+  width: 40%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  nav .logo {
+    width: 100%;
+    padding: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 nav .links {
-  justify-content: space-around;
+  width: 60%;
   text-align: right;
 }
 nav .links a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  padding: 2%;
-  font-size: 1.8rem;
+  padding: 6%;
+  font-size: 1.9rem;
+}
+nav .links a:hover {
+  background-color: #404265;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1%;
+  }
 }
 footer {
   color: #22283B;
@@ -194,7 +218,48 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.main-header {
+.header {
   width: 100%;
-  opacity: 90%;
+}
+.header .main-header {
+  width: 100%;
+  opacity: 60%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (max-width: 500px) {
+  .header .main-header {
+    display: none;
+  }
+}
+.header .over-img {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.header .over-img .header-text {
+  font-family: 'Alata', sans-serif;
+  font-size: 7rem;
+}
+@media (max-width: 500px) {
+  .header .over-img .header-text {
+    font-size: 4rem;
+  }
+}
+.header .over-img .make-text {
+  font-size: 10rem;
+}
+@media (max-width: 500px) {
+  .header .over-img .make-text {
+    font-size: 6rem;
+  }
+}
+.header .over-img input[type=text] {
+  padding: 4%;
+  margin: 5% 0%;
+  border: none;
+  font-size: 2rem;
 }
