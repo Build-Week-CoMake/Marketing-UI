@@ -174,7 +174,7 @@ nav {
 }
 nav .logo {
   width: 40%;
-  padding: 2%;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   nav .logo {
@@ -219,16 +219,11 @@ footer {
   align-items: center;
 }
 .header {
-  width: 100%;
+  margin-bottom: 2%;
 }
 .header .main-header {
   width: 100%;
   opacity: 100%;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #4abdac;
 }
 .header .over-img {
   position: absolute;
@@ -285,48 +280,48 @@ footer {
   color: white;
 }
 .section-one {
+  background-color: #dfdce3;
+  justify-content: space-between;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 0%;
-  background-color: #f7b733;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2%;
+}
+.section-one .section-one-img {
+  width: 50%;
+  order: -1;
 }
 .section-one h3 {
-  text-align: center;
-  width: 100%;
+  text-align: right;
   padding: 4%;
-  justify-content: center;
+  width: 40%;
+  margin: auto;
 }
-.section-one .boxes {
+.section-two {
   display: flex;
-  width: 100%;
+}
+.section-two .boxes {
+  display: flex;
+  width: 70%;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
   font-size: 2rem;
 }
-.section-one .boxes .box {
-  width: 30%;
+.section-two .boxes .box1 {
+  width: 40%;
   padding: 5%;
   background-color: white;
   text-align: center;
 }
-.section-one .boxes .box:hover {
-  background-color: #f7b733;
-}
-.section-two {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 4%;
-  background-color: white;
-}
-.section-two h3 {
+.section-two .boxes .box1 h3 {
   font-family: 'Alata', sans-serif;
   color: #f04c25;
+}
+.section-two .boxes .box2 {
+  width: 40%;
+  padding: 5%;
+  background-color: #f7b733;
+  text-align: center;
+  color: white;
 }
