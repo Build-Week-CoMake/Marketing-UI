@@ -5,18 +5,19 @@
 // .home {
 .header{
     width:100%;
-
+    // background: url(../img/kid.jpg) center center cover no-repeat fixed;
     .main-header{
         width:100%;
-        opacity:60%;
+        opacity:100%;
         background-attachment:fixed;
         background-size:cover;
         background-repeat:no-repeat;
         background-position:center center;
-
-        @media @phone{
-            .display();
-        }
+        background-color: @turq;
+        
+        // @media @phone{
+        //     .display();
+        // }
     }
 
     .over-img{
@@ -25,9 +26,18 @@
     left:75%;
     transform: translate(-50%, -50%);
 
+    @media @phone{
+        position:absolute;
+        top:50%;
+        left:50%;
+        text-align:center;
+        transform: translate(-50%, -50%);
+    }
+
         .header-text{
             font-family: 'Alata', sans-serif;
             font-size: 7rem;
+            color:white;
 
         @media @phone{
             font-size:4rem;
@@ -36,21 +46,98 @@
 
         .make-text{
             font-size:10rem;
+            color: @sunshine;
 
-        @media @phone{
-            font-size:6rem;
-        }
+            @media @phone{
+                font-size:6rem;
+            }
         }
 
         input[type=text]{
             padding:4%;
             margin:5% 0%;
-            border:none;
             font-size:2rem;
+
+            @media @phone{
+                padding:2%;
+                font-size:2rem;
+                justify-content:center;
+            }
+        }
+
+        button{
+            padding:4%;
+            border:none;
+            background: none;
+            font-size:3rem;
+            font-family: 'Alata', sans-serif;
+            color:white;
         }
     }
-
 }
+
+.section-one{
+    display:flex;
+    .section-theme(row, 100%, center, center, 0%);
+    background-color:@sunshine;
+    flex-wrap:wrap;
+
+    h3{
+        text-align:center;
+        width:100%;
+        padding:4%;
+        justify-content:center;
+    }
+
+    .boxes{
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin: 0 auto;
+        font-size:2rem;
+
+
+        .box{
+            width:30%;
+            padding:5%;
+            background-color:white;
+            text-align:center;
+        }
+        .box:hover{
+            background-color:@sunshine;
+        }
+
+    }
+}
+.section-two{
+    display:flex;
+    .section-theme(row, 100%, center, center, 4%);
+    background-color:white;
+    // h2{
+
+    // }
+    h3{
+        font-family: 'Alata', sans-serif;
+        color:@salmon;
+    }
+
+    p{
+        
+    }
+}
+
+
+    // h3{
+
+    // }
+
+    // .fas .fa-paw{
+    //     width:100%;
+    // }
+
+
+
 
 
 

@@ -194,7 +194,7 @@ nav .links a {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  padding: 6%;
+  padding: 3% 5.5%;
   font-size: 1.9rem;
 }
 nav .links a:hover {
@@ -223,16 +223,12 @@ footer {
 }
 .header .main-header {
   width: 100%;
-  opacity: 60%;
+  opacity: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}
-@media (max-width: 500px) {
-  .header .main-header {
-    display: none;
-  }
+  background-color: #4abdac;
 }
 .header .over-img {
   position: absolute;
@@ -240,9 +236,19 @@ footer {
   left: 75%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 500px) {
+  .header .over-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+}
 .header .over-img .header-text {
   font-family: 'Alata', sans-serif;
   font-size: 7rem;
+  color: white;
 }
 @media (max-width: 500px) {
   .header .over-img .header-text {
@@ -251,6 +257,7 @@ footer {
 }
 .header .over-img .make-text {
   font-size: 10rem;
+  color: #f7b733;
 }
 @media (max-width: 500px) {
   .header .over-img .make-text {
@@ -260,6 +267,66 @@ footer {
 .header .over-img input[type=text] {
   padding: 4%;
   margin: 5% 0%;
-  border: none;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .header .over-img input[type=text] {
+    padding: 2%;
+    font-size: 2rem;
+    justify-content: center;
+  }
+}
+.header .over-img button {
+  padding: 4%;
+  border: none;
+  background: none;
+  font-size: 3rem;
+  font-family: 'Alata', sans-serif;
+  color: white;
+}
+.section-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  background-color: #f7b733;
+  flex-wrap: wrap;
+}
+.section-one h3 {
+  text-align: center;
+  width: 100%;
+  padding: 4%;
+  justify-content: center;
+}
+.section-one .boxes {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.section-one .boxes .box {
+  width: 30%;
+  padding: 5%;
+  background-color: white;
+  text-align: center;
+}
+.section-one .boxes .box:hover {
+  background-color: #f7b733;
+}
+.section-two {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+  background-color: white;
+}
+.section-two h3 {
+  font-family: 'Alata', sans-serif;
+  color: #f04c25;
 }
