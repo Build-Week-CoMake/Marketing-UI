@@ -135,7 +135,7 @@ body {
 }
 h1 {
   font-family: 'Yellowtail', cursive;
-  color: white;
+  color: #213159;
   font-size: 6rem;
 }
 @media (max-width: 500px) {
@@ -172,13 +172,14 @@ p {
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #e7e7e7;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
 }
 nav .logo {
   width: 40%;
   padding: 1%;
+  color: #213159;
 }
 @media (max-width: 500px) {
   nav .logo {
@@ -196,7 +197,7 @@ nav .links {
 }
 nav .links a {
   text-decoration: none;
-  color: white;
+  color: #213159;
   font-size: 1rem;
   padding: 3% 5.5%;
   font-size: 1.9rem;
@@ -288,29 +289,19 @@ footer .links a {
 }
 .header .over-img .make-text {
   font-size: 10rem;
-  color: #f7b733;
+  color: white;
 }
 @media (max-width: 500px) {
   .header .over-img .make-text {
     font-size: 6rem;
   }
 }
-.header .over-img input[type=text] {
-  padding: 4%;
-  margin: 5% 0%;
-  font-size: 2rem;
-}
-@media (max-width: 500px) {
-  .header .over-img input[type=text] {
-    padding: 2%;
-    font-size: 2rem;
-    justify-content: center;
-  }
-}
 .header .over-img button {
-  padding: 4%;
+  padding: 1rem 10rem;
   border: none;
-  background: none;
+  margin: 2rem 0rem;
+  border-radius: 1rem;
+  background: #f04b4c;
   font-size: 3rem;
   font-family: 'Alata', sans-serif;
   color: white;
@@ -326,6 +317,7 @@ footer .links a {
 .section-one .section-one-img {
   width: 50%;
   order: -1;
+  padding: 7%;
 }
 .section-one .one-text {
   width: 40%;
@@ -361,7 +353,7 @@ footer .links a {
 .section-two .boxes .box2 {
   width: 30%;
   padding: 5%;
-  background-color: #f7b733;
+  background-color: #f04b4c;
   text-align: center;
   color: white;
 }
