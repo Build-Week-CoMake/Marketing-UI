@@ -131,7 +131,7 @@ html {
 html,
 body {
   font-family: 'Alata', sans-serif;
-  color: #4abdac;
+  color: #3d6098;
 }
 h1 {
   font-family: 'Yellowtail', cursive;
@@ -148,13 +148,17 @@ h3,
 h4,
 h5 {
   font-family: 'Yellowtail', cursive;
-  color: #404265;
+  color: #213159;
 }
 h2 {
   font-size: 3.2rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 4rem;
+}
+h4 {
+  font-size: 2rem;
+  line-height: 1.5;
 }
 p {
   font-size: 1.6rem;
@@ -168,7 +172,7 @@ p {
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f04c25;
+  background-color: #e7e7e7;
   justify-content: space-between;
   align-items: center;
 }
@@ -198,7 +202,7 @@ nav .links a {
   font-size: 1.9rem;
 }
 nav .links a:hover {
-  background-color: #404265;
+  background-color: #213159;
 }
 @media (max-width: 500px) {
   nav .links {
@@ -209,14 +213,46 @@ nav .links a:hover {
   }
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
   display: flex;
+  flex-wrap: wrap;
+  background-color: #213159;
   justify-content: center;
   align-items: center;
+}
+footer .foot-logo {
+  width: 10%;
+  padding: 1%;
+  justify-content: flex-end;
+}
+footer .foot-logo h2 {
+  color: #e7e7e7;
+}
+@media (max-width: 500px) {
+  footer .foot-logo {
+    padding: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+footer .links {
+  width: 30%;
+}
+footer .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 3% 5.5%;
+  font-size: 1.9rem;
+}
+@media (max-width: 500px) {
+  footer .links {
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1%;
+  }
 }
 .header {
   margin-bottom: 2%;
@@ -280,7 +316,7 @@ footer {
   color: white;
 }
 .section-one {
-  background-color: #dfdce3;
+  background-color: #e7e7e7;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
@@ -291,37 +327,47 @@ footer {
   width: 50%;
   order: -1;
 }
-.section-one h3 {
+.section-one .one-text {
+  width: 40%;
   text-align: right;
   padding: 4%;
-  width: 40%;
   margin: auto;
 }
-.section-two {
-  display: flex;
+.section-one .one-text h4 {
+  padding: 4% 0%;
+  font-family: 'Alata', sans-serif;
+}
+.section-two .how {
+  text-align: center;
+  padding: 4%;
+  font-size: 5rem;
 }
 .section-two .boxes {
   display: flex;
-  width: 70%;
+  width: 80%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   font-size: 2rem;
+  margin-bottom: 2%;
 }
 .section-two .boxes .box1 {
-  width: 40%;
+  width: 30%;
   padding: 5%;
-  background-color: white;
-  text-align: center;
-}
-.section-two .boxes .box1 h3 {
-  font-family: 'Alata', sans-serif;
-  color: #f04c25;
+  background-color: #3d6098;
+  justify-content: center;
+  align-items: center;
 }
 .section-two .boxes .box2 {
-  width: 40%;
+  width: 30%;
   padding: 5%;
   background-color: #f7b733;
   text-align: center;
   color: white;
+}
+.section-two .boxes .box3 {
+  width: 30%;
+}
+.section-two .boxes .box3 img {
+  width: 100%;
 }
