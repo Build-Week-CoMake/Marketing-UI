@@ -3,14 +3,13 @@ nav{
     display:flex;
     flex-wrap: wrap;
     // margin: 0 auto;
-    background-color:white;
+    background: linear-gradient(90deg, rgba(61,96,152,1) 0%, rgba(0,212,255,1) 100%);
     justify-content: space-around;
     align-items: center;
     
 	.logo{
         width:15%;
         padding:1%;
-        color:@violet;
 
         @media @phone{
             width:100%;
@@ -29,13 +28,41 @@ nav{
         
 		a{
 			text-decoration:none;
-			color:@violet;
+			color:white;
 			font-size: 1rem;
             padding: 3% 5.5%;
             font-size:1.9rem;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
         }
-        a:hover{
-            background-color:@violet;
+
+        a:before,a:after
+        {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            background: #FFF;
+            content: "";
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        a:before
+        {
+            top: 0px;
+            transform: translateY(10px);
+        }
+        a:after
+        {
+            bottom: 0px;
+            transform: translateY(-10px);
+        }
+        a:hover:before,a:hover:after
+        {
+            opacity: 1;
+            transform: translateY(0px);
         }
         
         @media @phone{
