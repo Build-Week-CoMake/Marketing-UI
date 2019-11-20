@@ -12,17 +12,27 @@
     padding:7rem;
     background: linear-gradient(90deg, rgba(61,96,152,1) 0%, rgba(0,212,255,1) 100%);
 
+    @media @phone{
+        padding:2rem;
+        flex-direction:column;
+    }
+
     .headerimg{
         width:40%;
+
+        @media @phone{
+            width:60%;
+            order:-1;
+        }
     }
 
     .over-img{
 
-    @media @phone{
-        text-align:center;
-        align-items:center;
-        justify-content:center;
-    }
+        @media @phone{
+            text-align:center;
+            align-items:center;
+            justify-content:center;
+        }
 
         .header-text{
             font-family: 'Alata', sans-serif;
@@ -39,7 +49,7 @@
             color: white;
 
             @media @phone{
-                font-size:4rem;
+                font-size:5rem;
             }
         }
 
@@ -68,6 +78,8 @@
     }
 }
 
+
+// =========SECTION ONE================
 .section-one{
     // display:flex;
     background-color:@clean;
@@ -107,6 +119,15 @@
             text-align:center;
         }
 
+        h3{
+            font-size:7rem;
+            color:@violet;
+
+        @media @phone{
+            font-size:3rem;
+        }    
+        }
+
         h4{
             padding:4% 0%;
             font-family: 'Alata', sans-serif;
@@ -115,8 +136,11 @@
                 font-size:1.8rem;
             }
         }
+
 }
     }
+
+    // ================SECTION TWO====================
 .section-two{
     background: linear-gradient(90deg, rgba(154,240,222,1) 35%, rgba(96,214,171,1) 100%);
     padding:2rem;
@@ -145,7 +169,7 @@
             flex-direction:column;
 
         }
-
+// =====box one=========
         .box1{
             width:30%;
             padding:5%;
@@ -191,7 +215,7 @@
                 padding:4rem;
             }
         }
-
+// =====box two============
         .box2{
             width:30%;
             padding:5%;
@@ -234,10 +258,10 @@
                 padding:4rem;
             }
         }
-
+// =========box three========
         .box3{
             width:30%;
-            padding:5%;
+            padding:5rem;
             background-color:white;
             text-align:center;
             color:@violet;

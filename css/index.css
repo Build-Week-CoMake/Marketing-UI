@@ -318,8 +318,20 @@ footer .links a:hover:after {
   padding: 7rem;
   background: linear-gradient(90deg, #3d6098 0%, #00d4ff 100%);
 }
+@media (max-width: 500px) {
+  .header {
+    padding: 2rem;
+    flex-direction: column;
+  }
+}
 .header .headerimg {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .header .headerimg {
+    width: 60%;
+    order: -1;
+  }
 }
 @media (max-width: 500px) {
   .header .over-img {
@@ -344,7 +356,7 @@ footer .links a:hover:after {
 }
 @media (max-width: 500px) {
   .header .over-img .make-text {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 }
 .header .over-img button {
@@ -402,6 +414,15 @@ footer .links a:hover:after {
   .section-one .one-text {
     width: 90%;
     text-align: center;
+  }
+}
+.section-one .one-text h3 {
+  font-size: 7rem;
+  color: #213159;
+}
+@media (max-width: 500px) {
+  .section-one .one-text h3 {
+    font-size: 3rem;
   }
 }
 .section-one .one-text h4 {
@@ -522,7 +543,7 @@ footer .links a:hover:after {
 }
 .section-two .boxes .box3 {
   width: 30%;
-  padding: 5%;
+  padding: 5rem;
   background-color: white;
   text-align: center;
   color: #213159;
