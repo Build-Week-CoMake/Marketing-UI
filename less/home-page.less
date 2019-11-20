@@ -26,7 +26,7 @@
 
         .header-text{
             font-family: 'Alata', sans-serif;
-            font-size: 7rem;
+            font-size: 10rem;
             color:white;
 
         @media @phone{
@@ -35,7 +35,7 @@
     }
 
         .make-text{
-            font-size:10rem;
+            font-size:15rem;
             color: white;
 
             @media @phone{
@@ -46,9 +46,9 @@
         button{
             padding:1rem 10rem;
             border:none;
-            margin: 2rem 0rem;
+            margin: 4rem 0rem;
             border-radius: 1rem;
-            background: @salmon;
+            background: @violet;
             font-size:3rem;
             font-family: 'Alata', sans-serif;
             color:white;
@@ -57,7 +57,13 @@
                 padding:1rem 5rem;
                 font-size:1.8rem;
                 margin:1rem;
+                
             }
+        }
+
+        button:hover{
+            color:@violet;
+            background: linear-gradient(90deg, rgba(145,251,191,1) 35%, rgba(139,226,219,1) 100%);
         }
     }
 }
@@ -65,7 +71,7 @@
 .section-one{
     // display:flex;
     background-color:@clean;
-    justify-content:center;
+    justify-content:space-around;
     display:flex;
     flex-wrap: wrap;
     // margin: 0 auto;
@@ -94,7 +100,7 @@
         width:40%;
         text-align:right;
         padding:4%;
-        margin:auto;
+        // margin:auto;
 
         @media @phone{
             width:90%;
