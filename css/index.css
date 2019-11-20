@@ -161,7 +161,7 @@ h4 {
   line-height: 1.5;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 .container {
@@ -242,6 +242,7 @@ footer {
   background-color: #213159;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
 }
 footer .foot-logo {
   width: 10%;
@@ -249,7 +250,9 @@ footer .foot-logo {
   justify-content: flex-end;
 }
 footer .foot-logo h2 {
-  color: #e7e7e7;
+  background: linear-gradient(90deg, #9af0de 35%, #60d6ab 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 500px) {
   footer .foot-logo {
@@ -270,6 +273,33 @@ footer .links a {
   font-size: 1rem;
   padding: 3% 5.5%;
   font-size: 1.9rem;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+footer .links a:before,
+footer .links a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+footer .links a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+footer .links a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+footer .links a:hover:before,
+footer .links a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
 }
 @media (max-width: 500px) {
   footer .links {
@@ -321,7 +351,7 @@ footer .links a {
   padding: 1rem 10rem;
   border: none;
   margin: 4rem 0rem;
-  border-radius: 1rem;
+  border-radius: 5rem;
   background: #213159;
   font-size: 3rem;
   font-family: 'Alata', sans-serif;
@@ -383,10 +413,16 @@ footer .links a {
     font-size: 1.8rem;
   }
 }
+.section-two {
+  background: linear-gradient(90deg, #9af0de 35%, #60d6ab 100%);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
 .section-two .how {
   text-align: center;
   padding: 2%;
-  font-size: 5rem;
+  font-size: 7rem;
+  color: #213159;
 }
 .section-two .boxes {
   display: flex;
@@ -406,10 +442,11 @@ footer .links a {
 .section-two .boxes .box1 {
   width: 30%;
   padding: 5%;
-  background-color: #213159;
+  background-color: white;
   align-items: center;
-  color: white;
+  color: #213159;
   text-align: center;
+  border-radius: 2rem;
 }
 @media (max-width: 500px) {
   .section-two .boxes .box1 {
@@ -420,7 +457,9 @@ footer .links a {
   }
 }
 .section-two .boxes .box1 h2 {
-  background-color: white;
+  background-color: #213159;
+  margin-bottom: 3rem;
+  color: white;
   padding: 1rem;
   font-size: 5rem;
   text-align: center;
@@ -445,9 +484,10 @@ footer .links a {
 .section-two .boxes .box2 {
   width: 30%;
   padding: 5%;
-  background-color: #f04b4c;
+  background-color: white;
   text-align: center;
-  color: white;
+  color: #213159;
+  border-radius: 2rem;
 }
 @media (max-width: 500px) {
   .section-two .boxes .box2 {
@@ -456,7 +496,9 @@ footer .links a {
   }
 }
 .section-two .boxes .box2 h2 {
-  background-color: white;
+  background-color: #213159;
+  margin-bottom: 3rem;
+  color: white;
   padding: 1rem;
   font-size: 5rem;
   text-align: center;
@@ -481,9 +523,10 @@ footer .links a {
 .section-two .boxes .box3 {
   width: 30%;
   padding: 5%;
-  background-color: #d5e7f5;
+  background-color: white;
   text-align: center;
-  color: white;
+  color: #213159;
+  border-radius: 2rem;
 }
 @media (max-width: 500px) {
   .section-two .boxes .box3 {
@@ -493,7 +536,9 @@ footer .links a {
   }
 }
 .section-two .boxes .box3 h2 {
-  background-color: white;
+  background-color: #213159;
+  margin-bottom: 3rem;
+  color: white;
   padding: 1rem;
   font-size: 5rem;
   text-align: center;
@@ -513,5 +558,5 @@ footer .links a {
   display: none;
 }
 .section-two .boxes .box3 p {
-  padding: 4rem;
+  padding: 2rem;
 }

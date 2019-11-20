@@ -17,6 +17,7 @@ footer{
     background-color:@footer-background;
     justify-content: center;
     align-items: center;
+    padding:2rem;
     
 	.foot-logo{
         width:10%;
@@ -24,7 +25,9 @@ footer{
         justify-content:flex-end;
 
         h2{
-            color:@clean;
+            background:linear-gradient(90deg, rgba(154,240,222,1) 35%, rgba(96,214,171,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         @media @phone{
@@ -48,8 +51,39 @@ footer{
 			font-size: 1rem;
             padding: 3% 5.5%;
             font-size:1.9rem;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
         }
         
+        a:before,a:after
+        {
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            background: #FFF;
+            content: "";
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        a:before
+        {
+            top: 0px;
+            transform: translateY(10px);
+        }
+        a:after
+        {
+            bottom: 0px;
+            transform: translateY(-10px);
+        }
+        a:hover:before,a:hover:after
+        {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
         @media @phone{
             width:100%;
             justify-content:space-around;
