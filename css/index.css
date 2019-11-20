@@ -281,26 +281,21 @@ footer .links a {
 }
 .header {
   margin-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 7rem;
+  background: linear-gradient(90deg, #3d6098 0%, #00d4ff 100%);
 }
-.header .main-header {
-  width: 100%;
-  opacity: 100%;
-}
-.header .over-img {
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+.header .headerimg {
+  width: 40%;
 }
 @media (max-width: 500px) {
   .header .over-img {
-    position: absolute;
-    top: 35%;
-    left: 50%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    transform: translate(-50%, -50%);
   }
 }
 .header .over-img .header-text {

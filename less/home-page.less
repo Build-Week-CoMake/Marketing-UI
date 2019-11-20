@@ -5,39 +5,23 @@
 // .home {
 .header{
     margin-bottom:2%;
-    // width:100%;
-    // background: url(../img/kid.jpg) center center cover no-repeat fixed;
-    .main-header{
-        width:100%;
-        opacity:100%;
-        // position:absolute;
-        // background-attachment:fixed;
-        // background-size:cover;
-        // background-repeat:no-repeat;
-        // background-position:center center;
-        // background-color: @turq;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-around;
+    padding:7rem;
+    background: linear-gradient(90deg, rgba(61,96,152,1) 0%, rgba(0,212,255,1) 100%);
+
+    .headerimg{
+        width:40%;
     }
 
-    // background{
-    //     background-image: url("..img/handsbluevivid.jpg");
-    //     background-repeat: no-repeat;
-    //     background-attachment: fixed;
-    // }
-
     .over-img{
-    position:absolute;
-    top:50%;
-    left:75%;
-    transform: translate(-50%, -50%);
 
     @media @phone{
-        position:absolute;
-        top:35%;
-        left:50%;
         text-align:center;
         align-items:center;
         justify-content:center;
-        transform: translate(-50%, -50%);
     }
 
         .header-text{
@@ -48,7 +32,7 @@
         @media @phone{
             font-size:3rem;
         }
-        }
+    }
 
         .make-text{
             font-size:10rem;
