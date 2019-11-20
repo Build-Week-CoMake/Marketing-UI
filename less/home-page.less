@@ -150,9 +150,11 @@
         padding:2%;
         font-size:7rem;
         color:@violet;
-        // background:linear-gradient(90deg, rgba(61,96,152,1) 0%, rgba(0,212,255,1) 100%);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
+
+        @media @phone{
+            font-size:5rem;
+        }
+
     }
 
         .boxes{
@@ -167,139 +169,113 @@
         @media @phone{
             width:100%;
             flex-direction:column;
-
         }
 // =====box one=========
         .box1{
-            width:30%;
-            padding:5%;
-            background-color:white;
-            align-items:center;
-            color:@violet;
-            text-align:center;
-            border-radius:2rem;
+            .box-theme(30%, 5%, white, center, @violet, center, 2rem);
 
             @media @phone{
                 width:90%;
-                margin: 0 auto;
-                justify-content:center;
-                align-items:center;
+                margin: 1rem auto;
             }
 
             h2{
-                background-color:@violet;
-                margin-bottom:3rem;
-                color:white;
-                padding:1rem;
-                font-size:5rem;
-                text-align:center;
-                border-radius:20rem;
+                .box-header(@violet, 2rem, white, 1rem, 5rem, center, 20rem);
 
                 @media @phone{
-                    font-size:4rem;
+                    font-size:3rem;
                     padding:.5rem;
-                    width:100%;
+                    margin:auto;
+                    width:15%;
                 }
             }
 
             img{
                 width:100%;
 
-                @mobile @phone{
-                    .display();
+                @media @phone{
+                    width:70%;
                 }
-
             }
 
             p{
-                padding:4rem;
+                padding-top:4rem;
+
+                @media @phone{
+                    padding-top:2rem;
+                }
             }
         }
 // =====box two============
         .box2{
-            width:30%;
-            padding:5%;
-            background-color:white;
-            text-align:center;
-            color:@violet;
-            border-radius:2rem;
+            .box-theme(30%, 5%, white, center, @violet, center, 2rem);
 
             @media @phone{
                 width:90%;
-                margin: 0 auto;
+                margin: 1rem auto;
             }
 
             h2{
-                background-color:@violet;
-                margin-bottom:3rem;
-                color:white;
-                padding:1rem;
-                font-size:5rem;
-                text-align:center;
-                border-radius:20rem;
+                .box-header(@violet, 2rem, white, 1rem, 5rem, center, 20rem);
 
                 @media @phone{
                     font-size:4rem;
                     padding:.5rem;
-                    width:100%;
+                    margin:auto;
+                    width:18%;
                 }
             }
 
             img{
                 width:100%;
 
-                @mobile @phone{
-                    .display();
+                @media @phone{
+                    width:70%;
                 }
-
             }
 
             p{
-                padding:4rem;
+                padding-top:4rem;
+
+                @media @phone{
+                    padding-top:2rem;
+                }
             }
         }
 // =========box three========
         .box3{
-            width:30%;
-            padding:5rem;
-            background-color:white;
-            text-align:center;
-            color:@violet;
-            border-radius:2rem;
+            .box-theme(30%, 5%, white, center, @violet, center, 2rem);
 
             @media @phone{
                 width:90%;
-                margin: 0 auto;
-                justify-content:center;
+                margin: 1rem auto;
             }
 
             h2{
-                background-color:@violet;
-                margin-bottom:3rem;
-                color:white;
-                padding:1rem;
-                font-size:5rem;
-                text-align:center;
-                border-radius:20rem;
+                .box-header(@violet, 2rem, white, 1rem, 5rem, center, 20rem);
 
                 @media @phone{
                     font-size:4rem;
                     padding:.5rem;
-                    width:100%;
+                    margin:auto;
+                    width:18%;
                 }
             }
 
             img{
                 width:100%;
 
-                @mobile @phone{
-                    .display();
+                @media @phone{
+                    width:70%;
                 }
-
             }
 
             p{
-                padding:2rem;
+                padding-top:4rem;
+
+                @media @phone{
+                    padding-top:1rem;
+                }
             }
         }
     }

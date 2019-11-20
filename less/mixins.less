@@ -1,13 +1,17 @@
 //MIXINS
 
 //SECTION THEMES
-.section-theme(@direction, @width, @justify, @align, @padding){
-	flex-direction: @direction;
-	width: @width;
-	justify-content: @justify;
-	align-items: @align;
-	padding: @padding;
-}
+// .section-theme(@direction, @width, @justify, @align, @padding){
+// 	flex-direction: @direction;
+// 	width: @width;
+// 	justify-content: @justify;
+// 	align-items: @align;
+// 	padding: @padding;
+// }
+
+
+
+
 
 //------------------
 //DISPLAY NONE------
@@ -17,11 +21,32 @@
 //------------------
 
 //BUTTON THEME
-.btn-theme(@background, @color:@porcelain, @padding, @radius, @align, @width){
-    background-color: @background;
-    color:@color;
-    padding:@padding;
-    border-radius:@radius;
-    text-align:@align;
-    width:@width;
+// .btn-theme(@background, @color:@porcelain, @padding, @radius, @align, @width){
+//     background-color: @background;
+//     color:@color;
+//     padding:@padding;
+//     border-radius:@radius;
+//     text-align:@align;
+//     width:@width;
+// }
+
+
+.box-theme(@width, @padding, @bgc, @align, @color, @ta, @br){
+    width: @width;
+    padding: @padding;
+    background-color: @bgc;
+    align-items: @align;
+    color: @color;
+    text-align: @ta;
+    border-radius: @br; 
+}
+
+.box-header(@bgc, @mb, @color, @padding, @fs, @ta, @br){
+    background-color: @bgc;
+    margin-bottom: @mb;
+    color: @color;
+    padding: @padding;
+    font-size: @fs;
+    text-align: @ta;
+    border-radius: @br; 
 }
