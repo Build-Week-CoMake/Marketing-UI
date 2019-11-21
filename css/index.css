@@ -151,7 +151,7 @@ h5 {
   color: #213159;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 h3 {
   font-size: 4rem;
@@ -245,10 +245,11 @@ footer {
   padding: 4rem;
 }
 footer .foot-logo {
-  width: 10%;
+  width: 20%;
   font-size: 20rem;
   padding: 0% 1%;
   justify-content: flex-end;
+  text-align: center;
 }
 footer .foot-logo h2 {
   background: linear-gradient(90deg, #9af0de 35%, #60d6ab 100%);
@@ -418,7 +419,6 @@ footer .links a:hover:after {
   }
 }
 .section-one .one-text h3 {
-  font-size: 7rem;
   color: #213159;
 }
 @media (max-width: 500px) {
@@ -442,8 +442,9 @@ footer .links a:hover:after {
 }
 .section-two .how {
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
   padding: 2%;
-  font-size: 7rem;
   color: #213159;
 }
 @media (max-width: 500px) {
