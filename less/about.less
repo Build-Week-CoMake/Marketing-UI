@@ -13,9 +13,13 @@
         flex-direction:column;
     }
 
-    .section-one-img{
+    @media @ipad{
+        flex-direction:column;
+    }
+
+    .about-section-one-img{
         width:40%;
-        padding:10rem 8rem;
+        margin:6rem;
         
         @media @phone{
             width:50%;
@@ -24,6 +28,14 @@
             // padding:2rem;
             // .display();
         }
+
+        @media @ipad{
+            order:-1;
+            width:50%;
+            padding:0rem;
+            margin: 2rem;
+        }
+
     }
 
     .team-text{
@@ -33,6 +45,11 @@
         // margin:auto;
 
         @media @phone{
+            width:90%;
+            text-align:center;
+        }
+
+        @media @ipad{
             width:90%;
             text-align:center;
         }
@@ -91,12 +108,24 @@
         width:100%;
         flex-direction:column;
     }
+
+    @media @ipad{
+        width:100;
+        flex-direction:column;
+    }
+
+
 // =====box one=========
         .about-box1{
             .box-theme(30%, 5%, white, center, @violet, center, 2rem);
             margin:3rem 0rem;
 
             @media @phone{
+                width:90%;
+                margin: 1rem auto;
+            }
+
+            @media @ipad{
                 width:90%;
                 margin: 1rem auto;
             }
@@ -140,6 +169,11 @@
                 margin: 1rem auto;
             }
 
+            @media @ipad{
+                width:90%;
+                margin: 1rem auto;
+            }
+
             h2{
                 .box-header(@violet, 2rem, white, 1rem, 3rem, center, 20rem);
 
@@ -174,6 +208,11 @@
             margin:3rem 0rem;
 
             @media @phone{
+                width:90%;
+                margin: 1rem auto;
+            }
+
+            @media @ipad{
                 width:90%;
                 margin: 1rem auto;
             }
@@ -216,6 +255,11 @@
                 margin: 1rem auto;
             }
 
+            @media @ipad{
+                width:90%;
+                margin: 1rem auto;
+            }
+
             h2{
                 .box-header(@violet, 2rem, white, 1rem, 3rem, center, 20rem);
 
@@ -254,6 +298,11 @@
                 margin: 1rem auto;
             }
 
+            @media @ipad{
+                width:90%;
+                margin: 1rem auto;
+            }
+
             h2{
                 .box-header(@violet, 2rem, white, 1rem, 3rem, center, 20rem);
 
@@ -288,6 +337,11 @@
             margin:3rem 0rem;
 
             @media @phone{
+                width:90%;
+                margin: 1rem auto;
+            }
+
+            @media @ipad{
                 width:90%;
                 margin: 1rem auto;
             }

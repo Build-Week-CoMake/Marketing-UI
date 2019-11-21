@@ -1,26 +1,15 @@
-// footer {
-//     color: #22283B;
-//     background: #f4f4f4;
-//     padding: 20px 0;
-//     border: 1px double #e0e0e0;
-//     border-radius: 10px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
 
-// Navigation code here
 footer{
     display:flex;
-    flex-wrap: wrap;
-    // margin: 0 auto;
     background-color:@footer-background;
-    justify-content: center;
     align-items: center;
-    padding:4rem;
+    justify-content:center;
+    padding:1rem;
+    width:100%;
+    margin: 0 auto;
     
 	.foot-logo{
-        width:20%;
+        width:20rem;
         font-size:20rem;
         padding:0% 1%;
         justify-content:flex-end;
@@ -40,12 +29,19 @@ footer{
             width:100%;
         }
 	}
-
+    
 	.links{
         // padding:1%;
-        width:100rem;
+        width:60rem;
         // text-align:center;
         
+        @media @phone{
+            width:100%;
+            justify-content:space-around;
+            text-align:center;
+            padding:2%;
+        }
+
 		a{
 			text-decoration:none;
 			color:white;
@@ -84,11 +80,5 @@ footer{
             transform: translateY(0px);
         }
 
-        @media @phone{
-            width:100%;
-            justify-content:space-around;
-            text-align:center;
-            padding:2%;
-        }
 	}
 }

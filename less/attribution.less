@@ -1,15 +1,15 @@
 .main-part{
+
     background-color:white;
     display:flex;
     flex-wrap:wrap;
     align-items:center;
     justify-content: center;
     flex-direction:column;
-    margin: 5% 0%;
+    margin: 10% 0%;
 
     .attr-text{
         width:100%;
-        padding:20%;
         text-align:center;
         // margin:0rem auto;
 
@@ -21,18 +21,26 @@
 
     p{
         color:@violet;
+        margin:1rem;
+        width:90%;
+        text-align:center;
 
         @media @phone{
             width:90%;
             margin:0 auto;
+        }
+
+        @media @ipad{
+            width:90%;
         }
     }
 
     ol{
         padding:2rem;
         font-size:2rem;
-        margin-bottom:20rem;
+        margin-bottom:1rem;
         line-height:1.8;
+        text-align:center;
 
         @media @phone{
             width:90%;
